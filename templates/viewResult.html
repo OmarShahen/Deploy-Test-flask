@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>All Users</h1>
+        <table>
+            {% for user in all_users:%}
+                <tr>
+                    <td>{{user["user_name"]}}</td>
+                    <td>{{user["user_email"]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
